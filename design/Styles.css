@@ -1,0 +1,149 @@
+ /* weigth font 
+ Weights: 500, 800
+
+ Layout designs 
+ - Mobile: 375px
+- Desktop: 1440px*/ 
+ 
+ *, *:before, *:after { 
+ box-sizing: inherit; 
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;   
+ }
+
+/*Globals */
+:root{
+--color_yellow: hsl(47, 88%, 63%);
+--color_white : hsl(0, 0%, 100%);
+--color_Gray500: hsl(0, 0%, 42%);
+--color_Gray950: hsl(0, 0%, 7%);  
+}
+
+
+body{
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif; 
+    background-color: var(--color_yellow);
+    display: grid;
+    place-content: center;
+    align-items: center;   
+    margin: 0;
+    padding: 20px;
+    
+}
+
+/* contenedor tarjeta */
+  
+.container{
+    width: 385px;
+    height: 520px;
+    background-color: var(--color_white);
+    border-radius: 1rem; 
+    box-shadow: 10px 10px 1px hsl(0, 0%, 7%);
+    border: 1.5px solid #000; 
+    margin: 10rem;
+    padding: 1.5rem;
+    
+}
+ 
+/* image card */
+    
+.image {
+    width: 100%;
+    border-radius: 1rem;
+    
+    
+}  
+
+
+/* learning */
+.input  {
+    background-color: var(--color_yellow) ;
+    width: min-content;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+/* parrafos */
+.container p {
+    font-size: 1rem;    
+    color: var(--color_Gray950);
+    margin-top: .5rem;
+    
+
+}
+
+
+.h2 , a {
+    text-decoration: none;
+    color: var(--color_Gray950);
+    font-weight: 800;
+    font-size: 1.5rem;   
+    
+}
+
+
+
+.container h2 a:hover { 
+   
+    cursor: pointer;
+    color: var(--color_yellow);
+}
+
+.container h2{
+    margin-top: 1rem;
+}
+
+.description p {
+   
+    color: var(--color_Gray500);
+    line-height: 1.4;
+ 
+
+}
+
+/* contenedor perfil autor */
+.image-author{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+.author-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 800;
+    color: var(--color_Gray950);
+    vertical-align: middle;
+}
+
+.image-author img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; 
+    
+}
+
+
+/* footer */
+.attribution {font-size: 11px; text-align: center; }
+.attribution a { font-size: 11px ; color:hsl(220, 7%, 8%); }
+
+
+/* responsive design */
+@media (max-width: 375px) {
+    .container {
+        width: auto;
+        height: auto;
+        margin: 2rem 0;
+    }
+}
+
+
+   
